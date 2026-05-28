@@ -4,7 +4,7 @@
   "description": "Backend for TagSnap - Inventory and pricing tool for estate sale liquidators",
   "main": "src/index.js",
   "scripts": {
-    "start": "node src/index.js",
+    "start": "npm run migrate up && node src/index.js",
     "dev": "nodemon src/index.js",
     "migrate": "node-pg-migrate"
   },
